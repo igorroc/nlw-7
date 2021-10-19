@@ -4,7 +4,6 @@ import { CreateMessageController } from "./controllers/CreateMessageController"
 import { GetLast3MessageController } from "./controllers/GetLast3MessagesController"
 import { ProfileUserController } from "./controllers/ProfileUserController"
 import { EnsureAuthenticated } from "./middleware/EnsureAuthenticated"
-import { ProfileUserService } from "./services/ProfileUserService"
 
 const router = Router()
 
