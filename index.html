@@ -6,29 +6,64 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Badge DoWhile - Igor Rocha</title>
 		<link rel="stylesheet" href="css/index.css" />
-        <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="./assets/Logo.png"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
-		<div class="top-background"></div>
-		<main>
-			<div class="photo">
-				<img src="./assets/FotoEditada.png" alt="Igor" />
+		<div class="light" style="--color: #ff038c; --side: -1"></div>
+		<div class="light" style="--color: #ffc323; --side: 1"></div>
+		<main id="card">
+			<div class="corda">
+				<div id="apoio"></div>
+				<div id="furo"></div>
 			</div>
-			<div class="main-title">
-				<h1>Igor Rocha</h1>
-				<a href="https://github.com/igorroc/" target="_blank">
-					<span><img src="./assets/icons/github.svg" /></span>
-					<p>igorroc</p>
-				</a>
+			<div class="top-background"></div>
+			<div class="content">
+				<div class="floating-badge">
+					<img
+						id="badge-text"
+						src="./assets/badge-text.png"
+						alt="Texto"
+					/>
+					<img
+						id="rocket"
+						src="./assets/badge-rocket.png"
+						alt="Foguete"
+					/>
+				</div>
+				<div class="photo">
+					<img src="./assets/FotoEditada.png" alt="Igor" />
+				</div>
+				<div class="main-title">
+					<h1>Igor Rocha</h1>
+					<a href="https://github.com/igorroc/" target="_blank">
+						<span><img src="./assets/icons/github.svg" /></span>
+						<p>igorroc</p>
+					</a>
+				</div>
+				<div class="description">
+					<p>A web developer, focused on design, trying to improve</p>
+				</div>
+				<ul class="links">
+					<a
+						href="https://igorroc.github.io/igorroc/"
+						target="_blank"
+					>
+						<img src="./assets/icons/globe.svg" />
+					</a>
+					<a href="https://linkedin.com/in/igorroc" target="_blank">
+						<img src="./assets/icons/linkedin.svg" />
+					</a>
+					<a href="https://instagram.com/igor.roc" target="_blank">
+						<img src="./assets/icons/Instagram.svg" />
+					</a>
+				</ul>
 			</div>
-			<div class="description">
-				<p>A web developer, focused on design, trying to improve</p>
-			</div>
-			<ul>
-				<a href="https://igorroc.github.io/igorroc/" target="_blank"> <img src="./assets/icons/globe.svg" /> </a>
-				<a href="https://linkedin.com/in/igorroc" target="_blank"> <img src="./assets/icons/linkedin.svg" /> </a>
-				<a href="https://instagram.com/igor.roc" target="_blank"> <img src="./assets/icons/Instagram.svg" /> </a>
-			</ul>
 		</main>
+
+		<script src="./js/index.js"></script>
 	</body>
 </html>
