@@ -145,6 +145,16 @@
 	}
 }
 
+.sideBackground {
+	--size: 50vw;
+	position: absolute;
+	left: calc((100vw - var(--size)));
+	height: 100vh;
+	width: var(--size);
+	background: linear-gradient(to bottom, #ff008d, #ffcd1e) no-repeat;
+	background-size: cover;
+}
+
 @keyframes rotate {
 	from {
 		transform: rotate(0deg);

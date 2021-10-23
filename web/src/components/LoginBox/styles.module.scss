@@ -34,6 +34,9 @@
 
 		svg {
 			margin-right: 14px;
+			&.loading {
+				margin: 0;
+			}
 		}
 		&:hover {
 			filter: brightness(0.9);
@@ -59,6 +62,9 @@
 	}
 }
 
+.loading {
+	animation: rotate 1s ease-in-out infinite;
+}
 @keyframes rotate {
 	from {
 		transform: rotate(0deg);

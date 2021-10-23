@@ -5,11 +5,17 @@ class CreateMessageController {
 		const { message } = req.body
 		const { user_id } = req
 
-		const service = new CreateMessageService()
+		if (message.length <= 130) {
+			const service = new CreateMessageService()
 
-		const result = await service.execute(message, user_id)
+			const result = await service.execute(message, user_id)
 
-		return res.json(result)
+			return res.json(result)
+		} else {
+			return res
+				.status(206)
+				.json("Mensagem muito longa. (máximo: 130 caracteres)")
+		}
 	}
 }
 

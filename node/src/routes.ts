@@ -1,7 +1,7 @@
 import { Router } from "express"
 import { AuthenticateUserController } from "./controllers/AuthenticateUserController"
 import { CreateMessageController } from "./controllers/CreateMessageController"
-import { GetLast3MessageController } from "./controllers/GetLast3MessagesController"
+import { GetLastMessagesController } from "./controllers/GetLastMessagesController"
 import { ProfileUserController } from "./controllers/ProfileUserController"
 import { EnsureAuthenticated } from "./middleware/EnsureAuthenticated"
 
@@ -15,7 +15,7 @@ router.post(
 	new CreateMessageController().handle
 )
 
-router.get("/messages/last3", new GetLast3MessageController().handle)
+router.get("/messages/last/:qtd", new GetLastMessagesController().handle)
 
 router.get("/profile", EnsureAuthenticated, new ProfileUserController().handle)
 export { router }

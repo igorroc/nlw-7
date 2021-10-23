@@ -23,7 +23,6 @@ export function MessageList() {
 				"/messages/last3"
 			)
 			setCurrentMessages(messagesResponse.data)
-			console.log(messagesResponse.data)
 		}
 
 		fetchMessages()
