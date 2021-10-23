@@ -9,7 +9,7 @@ npm i
 Agora é necessário pegar novamente as migrations do prisma, para isso acesse a pasta **node/** e rode o comando:
 
 ```bash
-npx migrate dev
+npx prisma migrate dev
 ```
 
 Como ultimo passo, você deve criar um arquivo **.env** dentro da pasta **node/** e colocar as seguintes variáveis de ambiente:
